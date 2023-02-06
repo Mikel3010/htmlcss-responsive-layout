@@ -94,11 +94,14 @@ footer{
         width: 40%;
     }
     .prefooter{
-        width: 90%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container-footer{
+        width: 70%;
         margin: 0 auto;
     }
 }
-
 @media screen and (min-width: 992px) {
     header .main-nav{
         display: block;
@@ -126,5 +129,8 @@ footer{
         width: 50%;
         margin: 0 auto;
     }
+    .container-footer{
+        width: 40%;
+        margin: 0 auto;
+    }
 }
-
