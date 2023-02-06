@@ -20,6 +20,14 @@
 .justify-content-between{
     justify-content: space-between;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
 /* typo  */
 
 /* header  */
@@ -36,6 +44,12 @@ header li a{
     text-decoration: none;
 }
 /* main  */
+#demo .col{
+    background-color: var(--secondary-color-light);
+}
+.col-debug{
+    height: 200px;
+}
 
 /* footer  */
 
@@ -47,5 +61,14 @@ header li a{
     }
     header .burger{
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .col{
+        width: calc((100% /3 ) - 1.5rem);
+    } 
+    .col:first-child{
+        width: calc(((100%/ 3 ) * 2 ) - .75rem );
     }
 }
