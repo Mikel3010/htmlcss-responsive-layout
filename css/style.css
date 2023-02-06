@@ -14,6 +14,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 1140px;
+    margin: 0 auto;
 }
 .flex{
     display: flex;
@@ -30,9 +31,6 @@
     width: 100%;
 }
 /* typo  */
-#strategic{
-    background-color: var(--first-color);
-}
 
 /* header  */
 header {
@@ -53,6 +51,12 @@ header li a{
 }
 .col-debug{
     height: 200px;
+}
+#strategic{
+    background-color: var(--first-color);
+}
+#testimonials .col:not(:first-child){
+    background-color: var(--first-color);
 }
 
 /* footer  */
