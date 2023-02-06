@@ -41,10 +41,35 @@ header .main-nav{
 }
 .main-nav li{
     list-style: none;
+    margin-bottom: 1.75rem;
+    margin-top: 1.75rem;
+    padding-left: 2rem;
 }
 header li a{
     text-decoration: none;
+    color: white;
+    font-size: .875rem;
 }
+.button{
+    background-color: white;
+    color: black;
+    padding: .75rem 1rem;
+    border-radius: 20px;
+
+}
+.logo img{
+    height: 2rem;
+    margin-bottom: 1.25rem;
+    margin-top: 1rem;
+}
+.burger{
+    height: 1.125rem;
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+    margin-top: 1.75rem;
+}
+
 /* main  */
 #demo .col{
     background-color: var(--secondary-color-light);
