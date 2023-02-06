@@ -64,7 +64,16 @@ header li a{
 #benefits .col{
     background-color: white;
 }
+#get-started{
+    background-color: var(--first-color);
+}
+.prefooter{
+    width: 100%;
+}
 /* footer  */
+footer{
+    background-color: #333333;
+}
 
 /* media  */
 
@@ -83,6 +92,10 @@ header li a{
     }
     #about-us .col:last-child{
         width: 40%;
+    }
+    .prefooter{
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -108,6 +121,10 @@ header li a{
     }
     #about-us .col:last-child{
         width: 30%;
+    }
+    .prefooter{
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
