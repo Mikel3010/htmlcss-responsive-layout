@@ -58,10 +58,26 @@ header li a{
 #testimonials .col:not(:first-child){
     background-color: var(--first-color);
 }
-
+#benefits{
+    background-color: var(--first-color);
+}
+#benefits .col{
+    background-color: white;
+}
 /* footer  */
 
 /* media  */
+@media screen and (min-width: 768px) {
+    #demo .col{
+        width: calc((100% /3 ) - 1.5rem);
+    } 
+    #demo .col:first-child{
+        width: calc(((100%/ 3 ) * 2 ) - .75rem );
+    }
+    #benefits .col{
+        width: calc(100% / 2 - 1.5rem);
+    }
+}
 
 @media screen and (min-width: 992px) {
     header .main-nav{
@@ -77,13 +93,8 @@ header li a{
     #strategic .col{
         width: calc(100% / 2 - 5rem);
     }
-}
-
-@media screen and (min-width: 768px) {
-    #demo .col{
-        width: calc((100% /3 ) - 1.5rem);
-    } 
-    #demo .col:first-child{
-        width: calc(((100%/ 3 ) * 2 ) - .75rem );
+    #benefits .col{
+        width: calc(100% / 3 - 1.5rem);
     }
 }
+
