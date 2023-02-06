@@ -29,9 +29,23 @@
 .col{
     margin-bottom: 1.5rem;
     width: 100%;
+    text-align: center;
 }
 /* typo  */
-
+#demo h4{
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    font-size: 1.125rem;
+}
+#demo p{
+    color: #5a6e7f;
+    font-size: .75rem;
+}
+#demo i{
+    font-size: 5rem;
+    padding-bottom: 1.875rem;
+    color: var(--secondary-color);
+}
 /* header  */
 header {
     background-color: var(--secondary-color);
@@ -55,7 +69,6 @@ header li a{
     color: black;
     padding: .75rem 1rem;
     border-radius: 20px;
-
 }
 .logo img{
     height: 2rem;
@@ -69,10 +82,39 @@ header li a{
     margin-bottom: 1.75rem;
     margin-top: 1.75rem;
 }
-
 /* main  */
 #demo .col{
     background-color: var(--secondary-color-light);
+    padding: 2rem 1.625rem 2.5rem;
+    border-radius: .625rem;
+}
+#demo .col-double{
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    margin-top: 3.125rem;
+}
+#demo .col-double p{
+    margin-bottom: 2.5rem;
+}
+#demo a{
+    font-size: .75rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: .875rem 3rem;
+    border-radius: 1.25rem;
+}
+#demo a i{
+    font-size: .875rem;
+    color: white;
+}
+#demo img{
+    width: 196px;
+    display: block;
+    margin: 0 auto;
 }
 .col-debug{
     height: 200px;
@@ -99,15 +141,27 @@ header li a{
 footer{
     background-color: #333333;
 }
-
 /* media  */
-
 @media screen and (min-width: 768px) {
     #demo .col{
         width: calc((100% /3 ) - 1.5rem);
     } 
     #demo .col:first-child{
         width: calc(((100%/ 3 ) * 2 ) - .75rem );
+    }
+    #demo .col:nth-child(2){
+        margin-top: 3.125rem;
+    }
+    #demo .col-double{
+        flex-wrap: nowrap;
+    }
+    #demo .col-double div{
+        width: 50%;
+    }
+    #demo .col-double div:last-child{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
     #benefits .col{
         width: calc(100% / 2 - 1.5rem);
