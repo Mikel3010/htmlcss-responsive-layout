@@ -122,6 +122,40 @@ header li a{
 #strategic{
     background-color: var(--first-color);
 }
+#strategic .row{
+    align-items: flex-end;
+}
+#strategic img{
+    width: 310px;
+    display: block;
+}
+#strategic h3{
+    padding-top: 5.625rem;
+    padding-bottom: 3.4375rem;
+}
+#strategic h4{
+    padding-top: 1.875rem;
+    padding-bottom: 1.5625rem;
+}
+#strategic i{
+    background-color: var(--first-color);
+    padding: 1rem 1.25rem;
+    border-radius: 50%;
+    margin-bottom: 1.875rem;
+    margin-top: 2.1875rem;
+}
+#strategic div:first-of-type{
+    text-align: left;
+    margin-top: 4.0625rem;
+}
+#strategic div:nth-child(2){
+    background-color: white;
+    border-radius: .625rem;
+    padding-top: 2.1875rem;
+}
+#strategic div:nth-child(2) p{
+    margin: 0 1.5625rem;
+}
 #testimonials .col:not(:first-child){
     background-color: var(--first-color);
 }
@@ -163,6 +197,12 @@ footer{
         align-items: flex-end;
         justify-content: center;
     }
+    #strategic img{
+        width: 690px;
+    }
+    #strategic div:first-of-type{
+        margin-top: 8.75rem;
+    }
     #benefits .col{
         width: calc(100% / 2 - 1.5rem);
     }
@@ -191,6 +231,16 @@ footer{
     #strategic .row{
         width: 80%;
         margin: 0 auto;
+    }
+    #strategic .col:first-child img{
+        width: 405px;
+    }
+    #strategic .col:nth-child(2) img{
+        width: 220px;
+        margin: 0 auto;
+    }
+    #strategic div{
+        margin-bottom: 3.75rem;
     }
     #strategic .col{
         width: calc(100% / 2 - 5rem);
